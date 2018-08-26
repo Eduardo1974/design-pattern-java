@@ -1,18 +1,28 @@
-Objetivo: converter a interface de uma classe em outra
-interface esperada pelos clientes. Adapter permite a
-comunicação entre classes que não poderiam trabalhar
-juntas devido à incompatibilidade de suas interfaces.
+A definição oficial do padrão Facade é: “O Padrão Facade fornece uma interface unificada para
+um conjunto de interfaces em um subsistema. O Facade define uma interface de nível mais alto
+que facilita a utilização do subsistema”.
 
-![alt text](problem_solution.png)
+![alt text](problem.png?raw=true "Problema")
+![alt text](solution.png?raw=true "Solução")
 
-Vantagens de Usar o Padrão Adapter
-O Padrão Adapter possui diversas boas práticas de programação orientada a objetos como o
-uso da composição de objetos, vinculação do cliente a uma interface e não a uma implementação 
-e flexibilidade com o uso de diversos adaptadores.
+Vantagens de Usar o Padrão Facade
+O Padrão Facade nos permite desconectar a implementação do cliente de qualquer
+subsistema. Assim, se quiséssemos acrescentar novas funcionalidades no subsistema
+seria necessário apenas alterar a Facade ao invés de alterar diversos pontos do sistema.
+Além disso, o padrão Facade simplifica uma interface tornando-a muito mais simples e
+unifica um conjunto de classes mais complexas que pertencem a um subsistema.
 
-Conclusão
-O Padrão Adapter é utilizado quando temos uma classe existente cuja interface não é adequada 
-para as suas necessidades. Além disso, o adaptador consegue mudar a interface de um fornecedor
-para uma interface que o cliente espera encontrar. O Adapter é um padrão que utiliza boas 
-praticas de orientação a objetos e a sua implementação fica mais complexa de acordo com a 
-complexidade da interface do fornecedor.
+Com o Padrão Facade podemos simplificar a utilização de um subsistema complexo apenas
+implementando uma classe que fornece uma interface única e mais razoável, porém se
+desejássemos acessar as funcionalidades de baixo nível do sistema isso seria perfeitamente
+possível. É importante ressaltar que o padrão Facade não “encapsula” as interfaces do sistema,
+o padrão Facade apenas fornece uma interface simplificada para acessar as suas funcionalidades.
+Imagine que existe um sistema com diversas classes contendo diversos métodos e tenhamos que
+agrupar todas essas classes chamando diversos métodos para realizar uma determinada operação.
+Tendo uma Facade precisaríamos apenas construir um método que agrupe todas essas classes e
+chame todos esses métodos. Assim, quando usuário quiser fazer essa operação ele chamaria
+apenas a Facade que realizaria essa operação, simplificando muito todo o processo com
+uma simples interface. Vale ressaltar que isso não significa que uma Facade não tenha 
+também funcionalidades próprias, ou seja, que tenha a sua própria inteligência e
+também utilize o subsistema. Um subsistema pode ter diversos Facades.
+
