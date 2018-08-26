@@ -3,6 +3,8 @@ interface esperada pelos clientes. Adapter permite a
 comunicação entre classes que não poderiam trabalhar
 juntas devido à incompatibilidade de suas interfaces.
 
+![alt text](problem_solution.png)
+
 Vantagens de Usar o Padrão Adapter
 O Padrão Adapter possui diversas boas práticas de programação orientada a objetos como o
 uso da composição de objetos, vinculação do cliente a uma interface e não a uma implementação 
