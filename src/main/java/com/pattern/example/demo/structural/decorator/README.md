@@ -5,7 +5,7 @@ Os decoradores fornecem uma alternativa flexível de subclasse para estender a f
 
 O Padrão Decorator tem como característica o seguinte:
 
-![alt text](decorator.jpg)
+![alt text](decorator.png)
 
 - Os decoradores têm o mesmo supertipo que os objetos que eles decoram;
 - Você pode usar um ou mais decoradores para englobar um objeto;
