@@ -38,4 +38,10 @@
 - Service Locator
 - Transfer Object
 
+#### Referencias
 
+https://brizeno.wordpress.com/padroes/
+
+https://www.tutorialspoint.com/design_pattern/
+
+http://www.inf.ufpr.br/andrey/ci163/Design_Patterns.pdf
