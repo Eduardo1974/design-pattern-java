@@ -38,7 +38,7 @@
 - Service Locator
 - Transfer Object
 
-#### Referencias
+#### Referências
 
 https://brizeno.wordpress.com/padroes/
 
